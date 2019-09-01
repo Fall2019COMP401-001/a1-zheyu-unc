@@ -101,7 +101,7 @@ public class A1Adept {
 		 */
 		System.out.println("Biggest: " + most_name + " (" + String.format("%.2f",max) + ")");
 		System.out.println("Smallest: " + least_name + " (" + String.format("%.2f",min) + ")");
-		System.out.println("Average:" + String.format("%.2f",average));
+		System.out.println("Average: " + String.format("%.2f",average));
 
 	}
 	
