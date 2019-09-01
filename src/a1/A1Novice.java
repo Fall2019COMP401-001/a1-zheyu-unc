@@ -40,10 +40,7 @@ public class A1Novice {
 		}
 
 		for (int i2=0; i2 <number_of_customers; i2++) {
-			System.out.print(initial_name[i2]);
-			System.out.print(". ");
-			System.out.print(last_name[i2]);
-			System.out.print(": ");
+			System.out.print(initial_name[i2] + ". " + last_name[i2] + ": ");
 			System.out.println(String.format("%.2f", total_cost[i2]));
 
 		}
