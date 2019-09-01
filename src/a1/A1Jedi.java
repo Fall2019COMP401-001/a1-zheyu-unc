@@ -31,6 +31,7 @@ public class A1Jedi {
 			int number_of_item_per_customer = scan.nextInt(); //3
 			int[] item_count = new int[number_of_item_per_customer]; //Number of each item each customer buy
 			String[] item_name_per_customer = new String[number_of_item_per_customer]; //name of items each customer buy
+			boolean[] have_bought_this = new boolean[number_of_items];
 			/*
 			 * This for loop examines all the items each customer buy
 			 * output: the total spent of each customer 
@@ -45,7 +46,10 @@ public class A1Jedi {
 				for(int i3 = 0; i3<number_of_items; i3++) {
 					if(item_name_per_customer[i2].equals(item_name[i3])) {
 						item_amount[i3] += item_count[i2];
-						number_of_customer_bought[i3] += 1;
+						if(!have_bought_this[i3]) {
+							number_of_customer_bought[i3] += 1;
+						}
+						have_bought_this[i3] = true;
 					}	
 				}
 			}
